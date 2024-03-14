@@ -1,4 +1,4 @@
-# Python Project Hub
+# Python Projects Hub
 
 ## Author: Joel Prebish
 ## Date: 03/01/2024
