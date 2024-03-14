@@ -12,7 +12,7 @@ The Python Project Hub is an evolving compilation of Python projects, each craft
 Within this hub, you'll find individual folders for each project. Every folder contains:
 - A `README.md` file with specifics about the project, its goals, and learning outcomes.
 - Starter files (`*.py`) to jumpstart the project.
-- A solutions file (`*.py`) with detailed example implementations.
+- A solutions file (`*Solutions.py`) with detailed example implementations.
 - A tests file (`Test_*.py`) containing Pytest test suite(s) to ensure functionality and encourage test-driven development (TDD).
 
 ### General Learning Outcomes
