@@ -1,11 +1,29 @@
-# Python Projects Hub
+# Programming Projects Hub
 
-## Author: Joel Prebish
-## Date: 03/01/2024
+### Author: Joel Prebish
+### Date: 04/01/2024
 
-### Introduction
+## Introduction
 
-The Python Project Hub is an evolving compilation of Python projects, each crafted to enhance coding skills through practical application. This repository is structured to cater to both novice programmers and experienced developers looking to sharpen their proficiency in Python.
+Welcome to the Programming Projects Hub, a comprehensive collection of projects designed to refine your programming skills through practical application. This repository is structured to cater to programmers of all levels, from beginners to advanced developers, providing a hands-on approach to mastering various programming concepts.
+
+### Table of Contents
+
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Testing with Pytest](#testing-with-pytest)
+- [Conclusion](#conclusion)
+- [Project Directory](#project-directory)
+- [Disclaimer](#disclaimer)
+
+## Getting Started
+
+Each project comes with its own set of requirements and starter files to guide you through the completion process. Begin by reviewing the `README.md` file in each project directory for an overview and specific instructions.
+
+To install the necessary dependencies for a project, navigate to its directory and run the appropriate command for your operating system:
+
+- Windows: `pip install -r requirements.txt` or `python -m pip install -r requirements.txt`
+- MacOS/Linux: `pip3 install -r requirements.txt`
 
 ### Repository Structure
 
@@ -15,26 +33,76 @@ Within this hub, you'll find individual folders for each project. Every folder c
 - A solutions file (`*Solutions.py`) with detailed example implementations.
 - A tests file (`Test_*.py`) containing Pytest test suite(s) to ensure functionality and encourage test-driven development (TDD).
 
-### General Learning Outcomes
+## Testing with Pytest
 
-Participants in these projects will:
-- Develop a deeper understanding of Python and its applications.
-- Engage in hands-on learning through completion of real-world tasks.
-- Embrace defensive programming and TDD with comprehensive test suites.
-- Navigate trade-offs in coding approaches and algorithm optimizations.
+In this repository, we prioritize the Test-Driven Development (TDD) approach to enhance the quality and reliability of code. Each project is accompanied by a `Test_*.py` file, which contains a comprehensive suite of tests built with Pytest. These tests are designed to validate that your code meets the specified functionality requirements.
 
-### Testing with Pytest
+### Setting Up Pytest
 
-Each project is equipped with a test suite powered by Pytest, emphasizing the importance of TDD in software development. These tests provide a robust framework to confirm the efficacy and correctness of your code.
+To run the tests, you will need to install Pytest, a powerful and flexible testing tool in Python. Here’s how you can install it:
 
-### Collaborative Learning
+- Open your terminal or command prompt.
+- Run the following command to install Pytest: `pip install pytest`
 
-This hub is more than a collection of projects; it may also serve as a platform for collaborative work.
+### Running Tests in VS Code
 
-### Conclusion
+While you can write and execute your code in Visual Studio Code (VS Code), detailed test results and debugging are often clearer when viewed in the command line interface. However, for convenience, you can also run Pytest directly within VS Code using its integrated terminal.
 
-Whether you're coding your first Python function or refining advanced algorithms, the Python Project Hub is your springboard to greater coding mastery.
+### Getting Detailed Test Output
+
+For a more comprehensive view of what each test is doing and to get detailed output in case of failures or errors, it's recommended to run the tests from the command line. Navigate to the project directory and run: `pytest Test_*.py`
+
+This command will execute the test suite and provide detailed information on the tests passed, failed, and any errors encountered, along with the reasons for any failures. This detailed feedback is invaluable for debugging and improving your code.
+
+Remember, the goal of TDD and these tests is not just to get your code to work, but to ensure it works correctly under various conditions and changes. Happy coding and testing!
+
+## Conclusion
+
+Whether you're taking your first steps in programming or seeking to master advanced concepts, the Programming Projects Hub offers a pathway to enhance your coding skills and deepen your understanding of software development.
+
+## Project Directory
+
+Projects are categorized by topic and arranged in increasing order of complexity. Some projects are standalone, while others build upon previous ones, allowing for progressive learning.
+
+1. **Basic Memory**
+    - The Stack _(Coming Soon)_
+    - The Heap _(Coming Soon)_
+    - Queues _(Coming Soon)_
+2. **File Handling**
+    - Reading/Writing **(TBD)**
+    - Simple Encryption **(TBD)**
+3. **Sets and Operations**
+    - Operations **(TBD)**
+    - Set Abstract Data Type (ADT) **(TBD)**
+    - Card Game (War) **(TBD)**
+4. **Linked Lists**
+    - [Linked List (LL)]()
+    - [Doubly LL (DLL)]()
+    - [Circular DLL (CDLL)]()
+5. **Bitmaps**
+    - Reading **(TBD)**
+    - BMP Editor **(TBD)**
+6. **Hashing**
+    - Hash Function **(TBD)**
+    - HashSet **(TBD)**
+7. **Search Trees**
+    - Binary Search Tree (BST) **(TBD)**
+    - Tree Set **(TBD)**
+    - Red-Black BST **(TBD)**
+8. **Tries (ReTRIEval Trees)**
+    - The Simple Trie (Prefix Tree) **(TBD)**
+    - De La Briandais Trie (DLB) **(TBD)**
+9. **Compression Algs**
+    - Run Length Encoding (RLE) **(TBD)**
+    - Lempel Ziv-Welch (LZW) **(TBD)**
+10. **Graphing**
+    - 2D Array Based **(TBD)**
+    - Adjacency Based **(TBD)**
+11. **More Memory**
+    - System Quirks **(TBD)**
+    - Memory **(TBD)**
 
 ### Disclaimer
 
-Focus on the projects' core files and follow the instructions within each project's `README.md`. The test suites are integral to the learning process; modifying them may alter their intended function. Your contributions and suggestions are always valued.
+Focus on understanding and completing the projects as outlined. The structure of each project is designed to guide your learning experience. While modifications and experimentation within the project scope are encouraged, it's crucial to only alter files explicitly designated for changes. Modifying other files or the project structure could disrupt the intended learning path and functionality. Adhere to the instructions in each project's `README.md` to ensure a comprehensive and effective learning experience.
+
