@@ -71,6 +71,7 @@ Projects are categorized by topic and arranged in increasing order of complexity
 2. **File Handling**
     - Reading/Writing **(TBD)**
     - Simple Encryption **(TBD)**
+    - Simple Decryption **(TBD)**
 3. **Sets and Operations**
     - Operations **(TBD)**
     - Set Abstract Data Type (ADT) **(TBD)**
