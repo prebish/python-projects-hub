@@ -9,7 +9,7 @@ Welcome to the Programming Projects Hub, a comprehensive collection of projects 
 
 ### Table of Contents
 
-- [Introduction](#overview)
+- [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Testing with Pytest](#testing-with-pytest)
 - [Conclusion](#conclusion)
