@@ -3,7 +3,7 @@
 '''
 DO NOT MODIFY
 Try to implement insert_head() first, as multiple other tests depend on it.
-To run these tests, use VS Code extensions or 'pytest Test_LL.py' in terminal.
+To run these tests, use VS Code extensions or 'pytest test_ll.py' in terminal.
 '''
 #region I M P O R T S
 import pytest

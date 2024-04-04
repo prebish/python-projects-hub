@@ -1,21 +1,20 @@
 # Author: Joel W. Prebish
 # Creation Date: 04/04/2024
+'''
+This file contains solutions for The Stack project.
+Please only take a look after you gave it your best shot.
+'''
 import os
 from stack import Stack
-'''
-Methods are already in recommended order they should be implemented.
-'TODO' marks the methods you should modify. Above them are the ones you should not.
-'''
 
 game_size = 3
 
 class TowersOfHanoi():
-    #NOTE DO NOT MODIFY
-    def __init__(self):
 
+    def __init__(self):
         # fill left tower
         self.left_tower = Stack()
-        
+        self.full_tower(self.left_tower)
         # set middle and right towers as empty stacks
         self.middle_tower = Stack()
         self.right_tower = Stack()
@@ -25,16 +24,14 @@ class TowersOfHanoi():
             "m": self.middle_tower,
             "r": self.right_tower
         }
-    
-    #NOTE DO NOT MODIFY
+
     def start(self):
         '''Starts the TowersOfHanoi game loop.'''
         while(not self.game_won()):
             self.update()
             self.read_next_move()
         print("YOU WON!")
-    
-    #NOTE DO NOT MODIFY
+
     def update(self):
         '''Updates display in game.'''
         os.system("cls")
@@ -45,8 +42,7 @@ class TowersOfHanoi():
         for tower in [self.left_tower, self.middle_tower, self.right_tower]:
             print('|\t'+str(tower)+'\t|',end="")
         print(2*"\n")
-    
-    #NOTE DO NOT MODIFY
+
     def read_next_move(self):
         '''Reads input for game (in-loop).'''
         # reads user input(), make lower and strip white spaces
@@ -59,30 +55,28 @@ class TowersOfHanoi():
         else: return
 
         self.move_ring(src, dst)
-    
-    #TODO complete implementation
+  
     def full_tower(self, tower: Stack):
         '''Fills a specified tower with all rings.'''
-        #NOTE add 1, 2, 3 to tower
-
-        return
-
-    #TODO complete implementation
-    def game_won(self) -> bool:
-        '''Checks if game is won (in-loop). '''
-        raise NotImplementedError("game_won not implemented.")
+        for i in range(game_size, 0, -1): tower.push(i)
     
-        return
-
-    #TODO complete implementation
+    def game_won(self):
+        '''Checks if game is won (in-loop).'''
+        if len(self.right_tower) == game_size:
+            return True
+        return False
+    
     def move_ring(self, src: Stack, dst: Stack):
         '''Moves a ring from src tower to dst tower.'''
-        #NOTE additional logic here
-        
-        # check if we can move the ring and then move ring accordingly  
-        if(True):
-            #NOTE complete this condition, remove pass
-            pass
+        # assign rings for the top of each corresponding stack (tower) 
+        src_ring: int = src.peek()
+        dst_ring: int = dst.peek()
+        # check top of each stack mentioned in move
+        if(src_ring is None): return
+        if(dst_ring is None): dst_ring = 999
+        # check and move ring accordingly
+        if(dst_ring > src_ring):
+            dst.push(src.pop())
         else: 
             print("Top of src is bigger than top of dst.")
             input("CONTINUE ...  ")

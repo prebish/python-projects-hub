@@ -1,56 +1,34 @@
-# The Stack
+# Memory Part 1: The Stack
 
-## Introduction
-The stack is a fundamental data structure in computer science, used extensively in programming and system operations. It operates on a Last-In-First-Out (LIFO) principle, meaning the last element added to the stack will be the first to be removed. This is analogous to a stack of plates, where you can only take the top plate off the stack.
+## Overview
+The stack is a fundamental data structure in computer science, used extensively in both theoretical and practical applications. It operates on a Last-In-First-Out (LIFO) principle, meaning the last element added to the stack is the first to be removed. This project, "The Stack," focuses on understanding and implementing this data structure through the classic problem of the Towers of Hanoi.
 
-## History
-The concept of a stack dates back to the early days of computer science, emerging as a critical structure for managing data and processes. It was first implemented in computer memory layouts to efficiently handle function calls, local variables, and the execution order in programming languages.
+## Description
+### Why Stacks?
+A stack is like a pile of plates where you can only add or remove the top plate. This simple yet powerful structure is crucial for tasks such as function call management, expression evaluation, and undo mechanisms in software applications. The primary operations of a stack are:
 
-## Usage
-Stacks are used in various applications, such as:
+- **Push**: Add an element to the top of the stack.
+- **Pop**: Remove and return the top element of the stack.
+- **Peek**: Look at the top element without removing it.
 
-- **Expression Evaluation and Syntax Parsing**: Compilers use stacks for parsing and evaluating expressions.
-- **Function Calls and Recursion**: Maintaining the point to return after a function call or a recursive call.
-- **Backtracking**: In algorithms, to backtrack to the previous state.
-- **Memory Management**: The call stack in most programming environments manages function calls and local variables.
+### Historical Context
+The concept of a stack has been around since the early days of computer science and continues to be a key topic in both academic and applied contexts. Its development paralleled the evolution of computing, especially in areas like memory management and algorithm design.
 
-## Project: The Stack
-In this project, "The Stack," we'll simulate a computer stack using an array to store elements, which will be strings representing "functions" in our simulation.
+### The Towers of Hanoi
+While the Towers of Hanoi is an ancient puzzle, it serves as an excellent practical example of stack usage. In this game, players move disks between three pegs (or towers) following specific rules, mimicking stack operations. The game illustrates the stack's LIFO behavior and recursive problem-solving.
 
-### Goals
-- Understand and implement the LIFO principle.
-- Simulate basic stack operations: push and pop.
-- Use the stack to manage a series of "function calls".
+## Getting Started
+### Project Contents
+- `stack.py`: Module for the stack data structure. **(DO NOT MODIFY)**
+- `hanoi.py`: The main game logic for the Towers of Hanoi. You will work in this file.
+- `solution_hanoi.py`: A complete solution to the Towers of Hanoi game. **(DO NOT MODIFY)**
+- `test_hanoi.py`: The test suite for verifying the functionality of the Towers of Hanoi implementation. **(DO NOT MODIFY)**
 
-### Implementation in Python
-We'll use Python for this project due to its simplicity and built-in list functionality that easily allows stack operations.
+### Running the Project
+You are encouraged to run the game provided in the `solution_hanoi.py` file to better understand how the game is supposed to work in additon to how a stack operates in a real-world scenario. To maximize learning, make sure to not look at the source code in the solution file unless you are stuck and have given it your best shot.
 
-1. **Creating the Stack**: We'll start with an empty list as our stack.
-2. **Push Operation**: Add elements (functions) to the top of the stack.
-3. **Pop Operation**: Remove the top element from the stack, simulating returning from a function call.
+## Conclusion
+The stack is a versatile and essential data structure in computer science. Through "The Stack" project, you gain practical experience with stacks, learning how to implement them and seeing their application in solving problems like the Towers of Hanoi. This experience will be invaluable in both your studies and future software development endeavors.
 
-### Example Code
-Here's a basic outline of how the stack will be implemented in Python:
-
-```python
-# Initialize an empty stack
-stack = []
-
-# Function to simulate a push operation
-def push(function_name):
-    stack.append(function_name)
-
-# Function to simulate a pop operation
-def pop():
-    if stack:
-        return stack.pop()
-    return None
-
-# Simulating function calls
-push('main()')
-push('function1()')
-push('function2()')
-
-# Simulating returning from a function call
-print(pop())  # Output should be 'function2()'
-print(pop())  # Output should be 'function1()'
+---
+*Author: Joel W. Prebish* 
