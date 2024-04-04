@@ -1,7 +1,7 @@
-# Memory Part 1: The Stack
+# Basic Memory: Stacks
 
 ## Overview
-The stack is a fundamental data structure in computer science, used extensively in both theoretical and practical applications. It operates on a Last-In-First-Out (LIFO) principle, meaning the last element added to the stack is the first to be removed. This project, "The Stack," focuses on understanding and implementing this data structure through the classic problem of the Towers of Hanoi.
+The stack is a fundamental data structure in computer science, used extensively in both theoretical and practical applications. It operates on a Last-In-First-Out (LIFO) principle, meaning the last element added to the stack is the first to be removed. This project, "Stacks," focuses on understanding and implementing this data structure through the classic problem of the Towers of Hanoi.
 
 ## Description
 ### Why Stacks?
