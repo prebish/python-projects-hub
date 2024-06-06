@@ -1,6 +1,6 @@
 # Programming Projects Hub
 
-### Author: Joel Prebish
+### Author: Joel Prebish  
 ### Date: 04/01/2024
 
 ## Overview
